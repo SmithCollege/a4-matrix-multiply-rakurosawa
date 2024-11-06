@@ -2,12 +2,10 @@
 #include <stdio.h>
 #include <cublas_v2.h>
 
-#define TILE_WIDTH 16
-
 // compile as: nvcc cublasMM.cu -o cublasMM -lcublas
 
 int main(){
-    int size = 16;
+    int size = 1000;
 
     float *x, *y, *z;
     cudaMallocManaged(&x, sizeof(float) * size * size);
@@ -41,8 +39,9 @@ int main(){
         }
     }
 
-    // cudaFree(x);
-    // cudaFree(y);
-    // cudaFree(z);
+    cudaFree(x);
+    cudaFree(y);
+    cudaFree(z);
 
+    return 0;
 }

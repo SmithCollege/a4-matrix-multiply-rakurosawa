@@ -15,7 +15,7 @@ double get_clock() {
 }
 
 int main(){
-    int size = 512;
+    int size = 1024;
 
     float *x, *y, *z;
     cudaMallocManaged(&x, sizeof(float) * size * size);

@@ -31,7 +31,7 @@ double get_clock() {
 
 
 int main() {
-    int size = 512;
+    int size = 1024;
 
     // allocate memory for the arrays
     float* x = malloc(sizeof(float) * size * size);

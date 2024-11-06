@@ -42,7 +42,7 @@ double get_clock() {
 
 
 int main(){
-    int size = 512; // test 128, 256, 512
+    int size = 1024; // test 128, 256, 512
 
     // allocate memory for the arrays
     float *x, *y, *z;
